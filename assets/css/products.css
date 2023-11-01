@@ -1,0 +1,3391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*,*:before,*:after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+/* body style */
+body 
+{
+    scroll-behavior: smooth;
+    /* padding: 0 5px 0 5px; */
+    /* background: url(/images/bluebg.PNG)no-repeat center/cover; */
+}
+/* mouse trailer */
+#trailer
+{
+    background: rgba(245, 245, 245, 0.151);
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+body:hover #trailer
+{
+    opacity: 1;
+}
+/* mobile nav */
+#closehamburger
+{
+height: 50px;
+width: 45px;
+fill: white;
+border-radius: 10px;
+}
+/* constant link to whatsapp */
+.whatsapp
+{
+    position: fixed;
+    background: white;
+    border: 1px solid;
+    width: 30vh;
+    height: 10vh;
+    z-index: 1;
+    border-radius: 20px;
+}
+/* nav */
+    /* sticky nav */
+    .sticky{
+        position: fixed;
+        z-index: 3;
+        background: rgba(77, 55, 0, 0.938);
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        top: 0;
+        border: none;
+    }
+    /* active in nav on different pages */
+    .navlinkactive
+    {
+        color: goldenrod;
+        border-bottom: 2px solid goldenrod;
+    }
+.nav
+{
+padding: 10px 0 5px 0;
+display: flex;
+width: 100%;
+border-bottom: 1px solid rgba(255, 255, 255, 0.589);
+height: 10vh;
+z-index: 1000;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+width: 30%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: none;
+    padding-top: 2px;
+}
+#hamburger
+{
+height: 50px;
+width: 45px;
+fill: white;
+border-radius: 10px;
+}
+.name
+{
+font-size: 20px;
+color: white;
+font-weight: bold;
+margin-left: 30px;
+}
+#naija
+{
+    color: green;
+}
+.extraholder
+{
+
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+height: 100%;
+width: 70%;
+}
+.navlinksholder ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 140vh;
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+}
+.navlinksholder a
+{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.navlinksholder a ion-icon
+{
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+.navlinksholder a:hover
+{
+    transition: .5s ease-in-out;
+    transition-delay: 0.1s;
+    color: goldenrod;
+    border-bottom: 2px solid;
+} 
+.ltdt
+{
+width: 40px;
+height: 40px;
+border: 1px solid;
+display: none;
+}
+/* image  slider */
+.wrapper
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(92, 66, 2);
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin: 5px 25px 0 25px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carouselimg
+{
+    height: 300px;
+    width: calc(100%/4);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+/* carousel(slider) icons */
+.wrapper ion-icon
+{
+    color: black;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    border: 1px solid ;
+    z-index: 1;
+    cursor: pointer;
+}
+.wrapper ion-icon:hover{
+    background: white;
+    
+}
+.fa-angle-left{
+    top: 120px;
+    left: 10px;
+}
+.fa-angle-right{
+    top: 120px;
+    right: 10px;
+}
+/* notifications */
+.notifications
+{
+    display: flex;
+    background: rgb(19, 112, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.637);
+    border-right: 2px solid rgba(0, 0, 0, 0.233);
+    width: fit;
+    padding: 10px 0 10px 0;
+    margin: 0 10px 0 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+marquee
+{display: flex;
+    align-items: center;
+}
+.noticelogo
+{
+    border-right: 1px solid white;
+    padding:  0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#noticelogo
+{
+    width: 25px;
+    height: 25px;
+    fill: white;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgba(245, 244, 244, 0.603);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid rgba(0, 0, 139, 0.438);
+}
+.suggestbox:hover
+{
+    background: rgba(255, 255, 255, 0.801);
+    box-shadow: -4px 9px 1px white;
+    transition: .5s ease-in-out;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.manufacturers a
+{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3%;
+    cursor: pointer;
+    text-decoration: none;
+}
+.manufacturers a:hover .mit
+{
+    color: rgb(122, 246, 255);
+    scale: 1.1;
+    transition: .5s ease-in-out;
+    transform: rotateY(-30deg);
+}
+.manufacturers:hover .mitlogo
+{
+    transition: .5s ease-in-out;
+    filter: grayscale();
+    transform: rotateY(30deg);
+}
+.manufacturers a .mit
+{
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 25px;
+}
+.manufacturers a .mitlogo
+{
+    width: 30vh;
+    border-radius: 2px;
+    border-bottom: 1px solid red;
+    border-right: 1px solid blue;
+}
+.productsholder
+{
+    padding: 1px 5px 10px 5px;
+    margin: 0 10px 0 10px;
+    background: rgba(226, 226, 226, 0.055);
+}
+.products
+{
+    margin-top: 5%;
+    padding: 0 0 10px 0;
+    border: 1px solid white;
+    background: rgb(255, 255, 255);
+}
+.productsheading
+{
+    display: flex;
+    align-items: center;
+    padding: 5px 0 5px 5px;
+    background: darkblue;
+}
+.repproductimg
+{
+    width: 8vh;
+    height: 8vh;
+    border-radius: 5px;
+    background: white;
+}
+.repproducttext
+{
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: white;
+
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 60vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    padding:10px;
+    border: none;
+    position: absolute;
+    background: rgb(1, 36, 70);
+    margin: 59vh 0 0 15%;
+    font-size: 17px;
+    font-family: bold;
+    color: white;
+    z-index: 2;
+    box-shadow:5px 4px 1px black;
+}
+.viewmore:hover
+{
+    border: 1px solid goldenrod;
+    color: rgb(1, 36, 70);
+    background: goldenrod;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    /* width: calc(100%/2); */
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+    border-left: 1px solid rgb(172, 194, 241);
+}
+.mainholder:hover
+{
+    bottom: 4%;
+    border: 1px solid black;
+    box-shadow: 7px 7px 1px rgb(116, 116, 116);
+    transition: .5s ease-in-out;
+}
+.mainholder:hover .productimg
+{
+    bottom: 10%;
+    transition: .5s ease-in-out;
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    text-transform: capitalize;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+/* wc display */
+.wc
+{
+    /* border-radius: 5px; */
+    margin: 2% 1% 0 1%;
+    padding: 2%;
+    background: linear-gradient(rgb(255, 255, 255),rgba(255, 255, 255, 0.603),rgba(255, 255, 255, 0.26),rgba(150, 90, 0, 0.11),rgba(255, 255, 255, 0));
+}
+.wcheader
+{
+    border-bottom: 1px solid ;
+    padding: 0 0 20px 0 ;
+}
+/* footer */
+/* 
+.footer
+{
+    border-top: 1px solid goldenrod;
+    margin: 3% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 100%;
+    background: linear-gradient(rgba(131, 94, 2, 0.712),rgb(80, 57, 1),rgb(87, 62, 0),rgb(17, 15, 15),black,black);
+}
+.footer-content-holder
+{
+    width: 95%;
+    padding: 10px 10px 20px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.footer-intro
+{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.footer-company-name
+{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 23px;
+}
+.footer-company-name-desc
+{
+    color: rgba(201, 200, 199, 0.712);
+    font-size: 16px;
+    padding: 10px 0 0 0;
+}
+.alternative-contact-link
+{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.alternative-contact-link button{
+    border: none;
+    background: rgb(0, 0, 44);
+    color: white;
+    border-radius: none;
+    outline: none;
+    width: 100%;
+    height: 10vh;
+    font-size: 15px;
+}
+.alternative-contact-link button a{
+    color: white;
+}
+.alternative-contact-link button:hover{
+   transition: .5s ease-in-out;
+   background: white;
+   color: darkgoldenrod;
+}
+.alternative-contact-link button:hover a{
+    color: goldenrod;
+}
+.footer-content-holder
+{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.footer-content-holder-inner
+{
+    display: flex;
+    flex-direction: column;
+}
+.footer-flow{
+    padding: 0 0 0 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.185);
+}
+.footer-flow a
+{
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+}
+.footer-flow a:hover
+{
+    color: green;
+    transition: .5s ease-in-out;
+}
+.footer-inner-header
+{
+    font-weight: bold;
+}
+.contact-platforms
+{
+    width: 100%;
+}
+.c-p a{
+    display: flex;
+}
+.ob
+{
+    color: rgb(117, 84, 0);
+    font-weight: bold;
+}
+.copyright
+{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-family: 'Courier New', Courier, monospace;
+}
+*/
+
+/* responsive */
+@media screen and (min-width: 200px)
+{
+
+body 
+{
+    padding: 5px;
+   background: url(images/illustrations_background/bluebg.PNG);
+}
+.nav
+{
+height: fit-content;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 65%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: block;
+    padding-top: 2px;
+}
+.name
+{
+font-size: 15px;
+font-weight: bold;
+margin-left: 0px;
+}
+.navlinksholder ul
+{
+    display: none;
+}
+.extraholder
+{
+width: 35%;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 4%;
+}
+
+.ltdt
+{
+display: block;
+}
+/* slider */
+.wrapper
+{
+    position: relative;
+    margin: 5px 10px 0 10px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 250px;
+    width: calc(95%);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+form input[type="search"]
+{
+    border-radius: 0px;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgb(245, 244, 244);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px black;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.mit
+{
+    font-size: 15px;
+}
+.mitlogo
+{
+    width: 30vh;
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 50vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    margin: 49vh 0 0 15%;
+    font-size: 15px;
+}
+.products
+{
+    margin-top: 15%;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+.footer-content-holder div{
+    width: calc(100%);
+}
+
+}
+@media screen and (min-width: 300px)
+{
+
+body 
+{
+    padding: 5px;
+   background: url(images/illustrations_background/bluebg.PNG);
+}
+.nav
+{
+height: fit-content;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 65%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: block;
+    padding-top: 2px;
+}
+.name
+{
+font-size: 15px;
+font-weight: bold;
+margin-left: 0px;
+}
+.navlinksholder ul
+{
+    display: none;
+}
+.extraholder
+{
+width: 35%;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 4%;
+}
+
+.ltdt
+{
+display: block;
+}
+/* slider */
+.wrapper
+{
+    position: relative;
+    margin: 5px 10px 0 10px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 250px;
+    width: calc(95%);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+form input[type="search"]
+{
+    border-radius: 0px;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgb(245, 244, 244);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px black;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.mit
+{
+    font-size: 15px;
+}
+.mitlogo
+{
+    width: 30vh;
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 50vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    margin: 49vh 0 0 15%;
+    font-size: 15px;
+}
+.products
+{
+    margin-top: 15%;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+.footer-content-holder div{
+    width: calc(100%);
+}
+
+}
+@media screen and (min-width: 400px)
+{
+
+body 
+{
+    padding: 5px;
+   background: url(images/illustrations_background/bluebg.PNG);
+}
+.nav
+{
+height: fit-content;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 65%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: block;
+    padding-top: 2px;
+}
+.name
+{
+font-size: 15px;
+font-weight: bold;
+margin-left: 0px;
+}
+.navlinksholder ul
+{
+    display: none;
+}
+.extraholder
+{
+width: 35%;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 4%;
+}
+
+.ltdt
+{
+display: block;
+}
+/* slider */
+.wrapper
+{
+    position: relative;
+    margin: 5px 10px 0 10px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 250px;
+    width: calc(100%);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+form input[type="search"]
+{
+    border-radius: 0px;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgb(245, 244, 244);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px black;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.mit
+{
+    font-size: 15px;
+}
+.mitlogo
+{
+    width: 30vh;
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 50vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    margin: 49vh 0 0 15%;
+    font-size: 15px;
+}
+.products
+{
+    margin-top: 15%;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+.footer-content-holder div{
+    width: calc(100%);
+}
+}
+@media screen and (min-width: 500px)
+{
+
+body 
+{
+    padding: 5px;
+   background: url(images/illustrations_background/bluebg.PNG);
+}
+.whatsapp
+{
+    left: 57%;
+    top: 80%;
+}
+.nav
+{
+height: fit-content;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 65%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: block;
+    padding-top: 2px;
+}
+.name
+{
+font-size: 15px;
+font-weight: bold;
+margin-left: 0px;
+}
+.navlinksholder ul
+{
+    display: none;
+}
+.extraholder
+{
+width: 35%;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 4%;
+}
+
+.ltdt
+{
+display: block;
+}
+/* slider */
+.wrapper
+{
+    position: relative;
+    margin: 5px 10px 0 10px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 250px;
+    width: calc(100%);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+form input[type="search"]
+{
+    border-radius: 0px;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgb(245, 244, 244);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px black;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.mit
+{
+    font-size: 15px;
+}
+.mitlogo
+{
+    width: 30vh;
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 50vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    margin: 49vh 0 0 15%;
+    font-size: 15px;
+}
+.products
+{
+    margin-top: 10%;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+.footer-content-holder div{
+    width: calc(100%);
+}
+.footer-flow{
+    background: rgba(255, 255, 255, 0.068);
+    margin-top: 1%;
+}
+}
+@media screen and (max-width:600px)
+{
+.responsivenav
+{
+    top: 10%;
+    left: 5%;
+    position: absolute;
+    background: red;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+}
+@media screen and (min-width: 600px)
+{
+body 
+{
+    padding: 5px;
+   background: url(images/illustrations_background/bluebg.PNG);
+}
+.whatsapp
+{
+    left: 80%;
+    top: 80%;
+    position: fixed;
+    background: white;
+    border: 1px solid;
+    width: 30vh;
+    height: 10vh;
+    z-index: 1;
+    border-radius: 20px;
+}
+.whatsapp
+{
+    left: 64%;
+    top: 80%;
+}
+.nav
+{
+height: fit-content;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+justify-content: start;
+width: 50%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: block;
+    padding-top: 2px;
+}
+.name
+{
+font-size: 17px;
+font-weight: bold;
+margin-left: 10px;
+}
+.extraholder
+{
+/* width: 60%; */
+width: 0%;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 3%;
+}
+.navlinksholder ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 55vh;
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+}
+.navlinksholder a
+{
+    font-size: 17px;
+}
+.navlinksholder .navlinks
+{
+    display: none;
+}
+.navlinksholder a ion-icon
+{
+    height: 20px;
+    width: 20px;
+    display: none;
+}
+.ltdt
+{
+display: none;
+}
+/* slider */
+.wrapper
+{
+    position: relative;
+    margin: 5px 10px 0 10px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 250px;
+    width: calc(100%/2);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+form input[type="search"]
+{
+    border-radius: 0px;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgb(245, 244, 244);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px black;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.mit
+{
+    font-size: 15px;
+}
+.mitlogo
+{
+    width: 30vh;
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 50vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    margin: 49vh 0 0 15%;
+    font-size: 15px;
+}
+.products
+{
+    margin-top: 9%;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+
+}
+@media screen and (min-width: 650px)
+{
+
+body 
+{
+    padding: 5px;
+   background: url(images/illustrations_background/bluebg.PNG);
+}
+.responsivenav
+{
+    display:none
+}
+.nav
+{
+height: fit-content;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+justify-content: start;
+width: 50%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: none;
+    padding-top: 2px;
+}
+.name
+{
+font-size: 17px;
+font-weight: bold;
+margin-left: 0px;
+padding-left: 20px;
+}
+.extraholder
+{
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 3%;
+}
+.navlinksholder ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60vh;
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+}
+.navlinksholder a
+{
+    font-size: 17px;
+}
+.navlinksholder .navlinks
+{
+    display: none;
+}
+.navlinksholder a ion-icon
+{
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+.ltdt
+{
+display: none;
+}
+/* slider */
+.wrapper
+{
+    position: relative;
+    margin: 5px 10px 0 10px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 250px;
+    width: calc(100%/2);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+form input[type="search"]
+{
+    border-radius: 0px;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgb(245, 244, 244);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px black;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.mit
+{
+    font-size: 15px;
+}
+.mitlogo
+{
+    width: 30vh;
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 50vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    margin: 49vh 0 0 15%;
+    font-size: 15px;
+}
+.products
+{
+    margin-top: 8%;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+
+}
+@media screen and (min-width: 700px)
+{
+
+body 
+{
+   padding: 5px;
+   background: url(images/illustrations_background/bluebg.PNG);
+}
+.whatsapp
+{
+    left: 70%;
+    top: 80%;
+}
+.responsivenav
+{
+    display:none
+}
+.nav
+{
+height: fit-content;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+justify-content: start;
+width: 50%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: none;
+    padding-top: 2px;
+}
+.name
+{
+font-size: 17px;
+font-weight: bold;
+margin-left: 0px;
+}
+.extraholder
+{
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 3%;
+}
+.navlinksholder ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60vh;
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+}
+.navlinksholder a
+{
+    font-size: 17px;
+}
+.navlinksholder .navlinks
+{
+    display: none;
+}
+.navlinksholder a ion-icon
+{
+    height: 20px;
+    width: 20px;
+    display: block;
+}
+.ltdt
+{
+display: none;
+}
+/* slider */
+.wrapper
+{
+    position: relative;
+    margin: 5px 10px 0 10px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 250px;
+    width: calc(100%/2);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+form input[type="search"]
+{
+    border-radius: 0px;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgb(245, 244, 244);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px black;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.mit
+{
+    font-size: 15px;
+}
+.mitlogo
+{
+    width: 30vh;
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 50vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    margin: 49vh 0 0 15%;
+    font-size: 15px;
+}
+.products
+{
+    margin-top: 7%;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+.footer-content-holder div{
+    width: calc(100%/2);
+}
+}
+@media screen and (min-width: 800px)
+{
+
+body 
+{
+    padding: 5px;
+   background: url(images/illustrations_background/bluebg.PNG);
+}
+.responsivenav
+{
+    display:none
+}
+.whatsapp
+{
+    left: 75%;
+    top: 80%;
+    position: fixed;
+    background: white;
+    border: 1px solid;
+    width: 30vh;
+    height: 10vh;
+    z-index: 1;
+    border-radius: 20px;
+}
+.nav
+{
+height: fit-content;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 30%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: none;
+    padding-top: 2px;
+}
+.name
+{
+font-size: 17px;
+font-weight: bold;
+margin-left: 0px;
+}
+.extraholder
+{
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 4%;
+}
+.navlinksholder ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50vh;
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+}
+.navlinksholder a
+{
+    font-size: 17px;
+}
+.navlinksholder .navlinks
+{
+    display: none;
+}
+.navlinksholder a ion-icon
+{
+    height: 25px;
+    width: 25px;
+    display: block;
+}
+.ltdt
+{
+display: none;
+}
+/* slider */
+.wrapper
+{
+    position: relative;
+    margin: 5px 10px 0 10px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 250px;
+    width: calc(100%/3);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+form input[type="search"]
+{
+    border-radius: 10px;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgb(245, 244, 244);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px black;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.mit
+{
+    font-size: 15px;
+}
+.mitlogo
+{
+    width: 30vh;
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 50vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    margin: 49vh 0 0 15%;
+    font-size: 15px;
+}
+.products
+{
+    margin-top: 5%;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+
+}
+@media screen and (min-width: 900px)
+{
+
+body 
+{
+    padding: 5px;
+   background: url(images/illustrations_background/bluebg.PNG);
+}
+.responsivenav
+{
+    display:none
+}
+.whatsapp
+{
+    left: 80%;
+    top: 80%;
+    position: fixed;
+    background: white;
+    border: 1px solid;
+    width: 30vh;
+    height: 10vh;
+    z-index: 1;
+    border-radius: 20px;
+}
+.nav
+{
+height: fit-content;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 30%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: none;
+    padding-top: 2px;
+}
+.name
+{
+font-size: 17px;
+font-weight: bold;
+margin-left: 0px;
+}
+.extraholder
+{
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 4%;
+}
+.navlinksholder ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 45vh;
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+}
+.navlinksholder a
+{
+    font-size: 17px;
+}
+.navlinksholder .navlinks
+{
+    display: none;
+}
+.navlinksholder a ion-icon
+{
+    height: 25px;
+    width: 25px;
+    display: block;
+}
+.ltdt
+{
+display: none;
+}
+/* slider */
+.wrapper
+{
+    position: relative;
+    margin: 5px 10px 0 10px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 250px;
+    width: calc(100%/3);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+form input[type="search"]
+{
+    padding-left: 30px;
+    padding-right: 20px;
+    border-radius: 30px;
+}
+#search_icon
+{
+    padding-right: 20px;
+    margin-left: 90%;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgb(245, 244, 244);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px black;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.mit
+{
+    font-size: 15px;
+}
+.mitlogo
+{
+    width: 30vh;
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 50vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    margin: 49vh 0 0 15%;
+    font-size: 15px;
+}
+.products
+{
+    margin-top: 5%;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+
+}
+@media screen and (min-width: 1000px)
+{
+
+body 
+{
+    padding: 5px;
+   background: url(images/illustrations_background/bluebg.PNG);
+}
+.responsivenav
+{
+    display:none
+}
+.whatsapp
+{
+    left: 84%;
+    top: 80%;
+    position: fixed;
+    background: white;
+    border: 1px solid;
+    width: 30vh;
+    height: 10vh;
+    z-index: 1;
+    border-radius: 20px;
+}
+.nav
+{
+height: fit-content;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 30%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: none;
+    padding-top: 2px;
+}
+.name
+{
+font-size: 17px;
+font-weight: bold;
+margin-left: 0px;
+}
+.extraholder
+{
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 4%;
+}
+#search_icon
+{
+    margin-left: 85%;
+}
+.navlinksholder ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80vh;
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+}
+.navlinksholder a
+{
+    font-size: 17px;
+}
+.navlinksholder .navlinks
+{
+    display: none;
+}
+.navlinksholder a ion-icon
+{
+    height: 25px;
+    width: 25px;
+    display: block;
+}
+.ltdt
+{
+display: none;
+}
+/* slider */
+.wrapper
+{
+    position: relative;
+    margin: 5px 10px 0 10px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 250px;
+    width: calc(100%/3);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+form input[type="search"]
+{
+    padding-left: 30px;
+    padding-right: 20px;
+    border-radius: 30px;
+}
+#search_icon
+{
+    padding-right: 20px;
+    margin-left: 92%;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgb(245, 244, 244);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px black;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.mit
+{
+    font-size: 15px;
+}
+.mitlogo
+{
+    width: 30vh;
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 50vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    margin: 49vh 0 0 15%;
+    font-size: 15px;
+}
+.products
+{
+    margin-top: 4%;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+.footer-content-holder div{
+    width: calc(100%/4);
+}
+
+}
+@media screen and (min-width: 1100px)
+{
+body 
+{
+   padding: 5px;
+   background: url(images/illustrations_background/bluebg.PNG);
+}
+.responsivenav
+{
+    display:none
+}
+.whatsapp
+{
+    left: 84%;
+    top: 80%;
+    position: fixed;
+    background: white;
+    border: 1px solid;
+    width: 30vh;
+    height: 10vh;
+    z-index: 1;
+    border-radius: 20px;
+}
+.nav
+{
+height: fit-content;
+}
+.logoholder
+{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 30%;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.hamburger
+{
+    display: none;
+    padding-top: 2px;
+}
+.name
+{
+font-size: 17px;
+font-weight: bold;
+margin-left: 0px;
+}
+.extraholder
+{
+width: 70%;
+display: flex;
+align-items: center;
+justify-content: end;
+padding-right: 4%;
+}
+.navlinksholder ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80vh;
+    align-items: center;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+}
+.navlinksholder a
+{
+    font-size: 17px;
+}
+.navlinksholder .navlinks
+{
+    display: block;
+}
+.navlinksholder a ion-icon
+{
+    height: 25px;
+    width: 25px;
+    display: none;
+}
+.ltdt
+{
+display: none;
+}
+/* slider */
+.wrapper
+{
+    position: relative;
+    margin: 5px 10px 0 10px;
+}
+.wrapper .carousel
+{
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.carousel .dragging
+{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel .dragging img
+{
+    pointer-events: none;
+}
+.carousel img
+{
+    height: 250px;
+    width: calc(100%/4);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel img:hover
+{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+.carousel img:first-child
+{
+    margin-left: 0px;
+}
+form input[type="search"]
+{
+    padding-left: 30px;
+    padding-right: 20px;
+    border-radius: 30px;
+}
+#search_icon
+{
+    padding-right: 20px;
+    margin-left: 92%;
+}
+/* 'search in' section  */
+.searchin
+{
+    margin: 7px 10px 0 10px;
+}
+.searchin a
+{
+    text-decoration: none;
+    color: black;
+}
+#searchinheader
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 15px;
+    /* text-transform: uppercase; */
+}
+.searchsuggestions
+{
+    display: flex;
+    height: fit-content;
+    overflow-x: scroll;
+}
+.searchsuggestions::-webkit-scrollbar
+{
+    width: 3px;
+    height: 5px;
+}
+.suggestbox
+{
+    background: rgb(245, 244, 244);
+    margin: 0 10px 0 10px;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    height: 23vh;
+    width: 23vh;
+    border-radius: 0px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset -1px -1px 1px black;
+}
+.suggestcircle
+{
+    width: 10vh;
+    height: 10vh;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.suggesttext
+{
+    height: 10vh;
+    width: 20vh;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.527); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* products begins */
+.mit
+{
+    font-size: 15px;
+}
+.mitlogo
+{
+    width: 30vh;
+}
+.mainproductsholder a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    /* when view more button is clicked */
+    height: 70vh;
+    /* height: fit-content; */
+}
+.viewmore
+{
+    margin: 69vh 0 0 15%;
+    font-size: 15px;
+}
+.products
+{
+    margin-top: 4%;
+}
+.mainholder
+{
+    margin: 20px;
+    position: relative;
+    width: 25vh;
+    height: 30vh;
+    display: flex;
+    justify-content: end;
+    overflow-y: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 7px 1px rgb(226, 226, 226);
+    border-top: 1px solid rgb(165, 165, 165);
+}
+.productimg
+{
+    object-fit: center/cover;
+    position: absolute;
+}
+.productnameholder
+{
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    display: flex;
+    align-items: end;
+}
+.productname
+{
+    background: rgba(1, 5, 32, 0.603);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+.productname-keyword
+{
+    color: rgba(255, 119, 101, 0.815);
+}
+.footer-content-holder div{
+    width: calc(100%/4);
+}
+
+}
