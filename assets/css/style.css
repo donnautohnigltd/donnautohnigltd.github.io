@@ -90,7 +90,21 @@
      width: 84px;
      height: 84px;
 }
-
+/* map */
+.mapouter
+{
+     position:relative;
+     text-align:right;
+     height:142px;
+     width:251px;
+}
+.gmap_canvas
+{
+     overflow:hidden;
+     background:none!important;
+     height:142px;
+     width:251px;
+}
 
 
 
